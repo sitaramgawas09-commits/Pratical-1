@@ -1,2 +1,2 @@
-# Web-Developmnet-Journal
+# Practical-1
 Sitaram Gawas Works 
