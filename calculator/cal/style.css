@@ -1,0 +1,209 @@
+body{
+    background: #833AB4;
+     margin: 0;
+    min-height: 100vh;
+
+ 
+background: linear-gradient(235deg, rgba(131, 58, 180, 1) 0%, rgba(29, 249, 253, 1) 47%, rgba(249, 30, 202, 1) 100%, rgba(249, 52, 39, 1) 92%, rgba(252, 176, 69, 1) 84%); 
+}
+
+
+.container{
+
+
+ padding: 5px;
+    margin:auto;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    border:2px solid black;
+    justify-items: center;
+    height: 700px;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+background:linear-gradient(to right,#f7ff00,#db36a4) ;
+    margin-top: 5%;
+
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+      box-shadow: 0px 0px 50px black,
+                0px 0px 100px black,
+                0px 0px 2px black,
+                0px 0px 4px black;
+} 
+
+.screen{
+
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items:center;
+    height: 100px;
+    width: 90%;
+    border-radius: 50px;
+    gap:25px;
+    font-size: 50px;
+     
+ box-shadow: 0px 0px 10px black,
+             0px 0px 2px black,
+             0px 0px 3px black;
+    background: rgba(255,255,255,0.40);
+   box-shadow: 0.18px rgba(255,255,255,0.20);
+}
+
+.buttons{
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    height: 90px;
+    width: 90px;
+     background-image: linear-gradient(120deg,blue,purple) ;
+   background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 5px black,
+                0px 0px 10px black;
+                 
+}
+
+.pd{
+    padding: 5px;
+     display: flex;
+     justify-items: center;
+     justify-content: center;
+    gap:50px;
+    
+}
+
+
+.buttons:hover{
+    transform: translatey(-5px);
+    transition: 0.5s;
+}
+
+
+        .design{
+          padding: 22px;
+          top:25%;
+          left:25%;
+          position: absolute;
+          border:5px none;
+          background: transparent;
+          box-shadow:0px 0px 20px rgb(9, 255, 0),
+                     0px 0px 10px rgb(94, 255, 0),
+                     0px 0px 80px rgb(51, 255, 0) ;
+          animation: flow 5s infinite ease-in-out;
+        }    
+
+       @keyframes flow{
+          0%{
+            top:100%;
+            left: 25%;
+              transform: rotateZ(0);
+              opacity: 4;
+          }
+      
+          100%{
+            
+             top:0%;
+             left:25%;
+             transform: rotateZ(360deg);
+            opacity: 0;
+          }
+       
+       }
+
+
+        .design2{
+          padding: 22px;
+          top:25%;
+          left:75%;
+          position: absolute;
+          border:5px none;
+          animation: flow2 5s infinite ease-in-out;
+           box-shadow:0px 0px 20px rgb(255, 247, 0),
+                     0px 0px 10px rgb(255, 247, 0),
+                     0px 0px 80px rgb(255, 217, 0) ;
+        }  
+     
+
+         @keyframes flow2{
+          0%{
+            top:100%;
+            left: 85%;
+              transform: rotateZ(0);
+              opacity: 4;
+          }
+      
+          100%{
+            
+             top:0%;
+             left:85%;
+             transform: rotateZ(360deg);
+            opacity: 0;
+          }
+       
+       }
+       
+ .design3{
+          padding: 22px;
+          top:25%;
+          left:15%;
+          position: absolute;
+          border:10px none;
+          animation: flow3 10s infinite ease-in-out;
+           box-shadow:0px 0px 20px rgb(255, 0, 0),
+                     0px 0px 10px rgb(255, 0, 0),
+                     0px 0px 80px rgb(255, 0, 0);
+        }  
+     
+
+         @keyframes flow3{
+          0%{
+              top:100%;
+              left: 15%;
+              transform: rotateZ(0);
+              opacity: 4;
+          }
+      
+          100%{
+             top:0%;
+             left:0%;
+             transform: rotateZ(360deg);
+             opacity: 0;
+          }
+       
+       }
+        .design4{
+          padding: 22px;
+          top:25%;
+          left:15%;
+          position: absolute;
+          border:10px none;
+          animation: flow4 10s infinite ease-in-out;
+           box-shadow:0px 0px 20px rgb(255, 0, 0),
+                     0px 0px 10px rgb(255, 0, 0),
+                     0px 0px 80px rgb(255, 0, 0);
+        }  
+     
+
+         @keyframes flow4{
+          0%{
+              top:100%;
+              left: 75%;
+              transform: rotateZ(0);
+              opacity: 4;
+          }
+      
+          100%{
+             top:0%;
+             left:100%;
+             transform: rotateZ(360deg);
+             opacity: 0;
+          }
+        }

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jav.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="boad">
+   <button id="calcu"  >Calculator</button>
+   </div>
+    <div class="load" id="loader"></div>
+     <div class="load1" id="loader"></div>
+       <div class="load2" id="loader"></div>
+         <div class="load3" id="loader"></div>
+            <div class="load4" id="loader"></div>
+
+            <div class="design"></div>
+         <div class="design2"></div>
+
+    <style>
+
+        body{
+            background-color: black;
+            min-height: 100vh;;
+            min-width: 100vh;
+           transition: 0.5s;
+            animation: c1 2s infinite ease-in-out;
+        }
+        
+        .design{
+          padding: 22px;
+          top:25%;
+          left:25%;
+          position: absolute;
+          border:5px none;
+          background: transparent;
+          box-shadow:0px 0px 20px rgb(0, 247, 255),
+                     0px 0px 10px rgb(0, 247, 255),
+                     0px 0px 80px rgb(0, 247, 255) ;
+          animation: flow 5s infinite ease-in-out;
+        }    
+
+       @keyframes flow{
+          0%{
+            top:100%;
+            left: 25%;
+              transform: rotateZ(0);
+              opacity: 4;
+          }
+      
+          100%{
+            
+             top:0%;
+             left:25%;
+             transform: rotateZ(360deg);
+            opacity: 0;
+          }
+       
+       }
+
+
+        .design2{
+          padding: 22px;
+          top:25%;
+          left:75%;
+          position: absolute;
+          border:5px none;
+          animation: flow2 5s infinite ease-in-out;
+           box-shadow:0px 0px 20px rgb(255, 247, 0),
+                     0px 0px 10px rgb(255, 247, 0),
+                     0px 0px 80px rgb(255, 217, 0) ;
+        }  
+     
+
+         @keyframes flow2{
+          0%{
+            top:100%;
+            left: 85%;
+              transform: rotateZ(0);
+              opacity: 4;
+          }
+      
+          100%{
+            
+             top:0%;
+             left:85%;
+             transform: rotateZ(360deg);
+            opacity: 0;
+          }
+       
+       }
+
+
+
+
+
+
+       @keyframes c1{
+         0%{
+             box-shadow: 0px 0px 5px white,
+                        0px 0px 20px white,
+                        0px 0px 40px white,
+                        inset 0px 0px 50px rgb(0, 238, 255);
+         }
+         20%{
+            box-shadow: 0px 0px 5px rgb(255, 0, 0),
+                        0px 0px 20px rgb(255, 0, 0),
+                        0px 0px 40px rgb(255, 0, 0),
+                         inset 0px 0px 50px rgb(0, 238, 255);
+         }
+         40%{
+             box-shadow: 0px 0px 5px rgb(0, 255, 255),
+                        0px 0px 20px rgb(0, 247, 255),
+                        0px 0px 40px rgb(0, 247, 255),
+                        inset 0px 0px 50px rgb(255, 230, 0);
+         }
+         60%{
+            box-shadow: 0px 0px 5px rgb(255, 0, 234),
+                        0px 0px 20px rgb(247, 0, 255),
+                        0px 0px 40px rgb(255, 0, 234),
+                        inset 0px 0px 50px rgb(0, 26, 255);
+         }
+         80%{
+            box-shadow: 0px 0px 5px rgb(255, 166, 0),
+                        0px 0px 20px rgb(255, 166, 0),
+                        0px 0px 40px rgb(255, 166, 0),
+                        inset 0px 0px 50px rgb(255, 0, 221);
+         }
+          100%{
+              box-shadow: 0px 0px 5px rgb(119, 0, 255),
+                        0px 0px 20px rgb(119, 0, 255),
+                        0px 0px 40px rgb(119, 0, 255),
+                        inset 0px 0px 50px rgb(255, 0, 0);
+          }
+       }
+
+        .boad{
+          margin: auto;
+          display: flex;
+          justify-content:center;
+          justify-items: center;
+          align-items: center;
+          padding: 2px;
+           border: 2px solid white;
+           height: 2px;
+           border-radius: 50px;
+           left: 50%;
+           width: 5%;
+           box-shadow: 0px 0px 50px white,
+                        0px 0px 10px white,
+                        0px 0px 80px white;
+             
+        }
+
+        .boad:hover{
+            width: 100%;
+            transition: 2s ease-in-out;
+        }
+
+        button{
+          align-items: center;
+          text-align: center;
+          height: 2px ;
+          width: 2px;
+          padding-top: 5px;
+        }
+
+        button:hover{
+          width: 100px;
+          height: 120px;
+          transition: 2s;
+          border-radius: 41%;
+            box-shadow: 0px 0px 50px white,
+                        0px 0px 10px white,
+                        0px 0px 80px white;
+          display: block;
+        }
+        .load{
+           height: 50px;
+           width: 50px;
+           border:5px solid rgb(0, 238, 255);
+           top: 50% ;
+           left: 50%;
+        
+           position: absolute;
+           background: none;
+              border-radius: 10%;
+              animation: loader 2s infinite ease-in-out;
+            
+        }
+
+       .load1{
+         height: 50px;
+           width: 50px;
+           border:5px solid rgb(0, 238, 255);
+           top: 46% ;
+           left: 48%;
+           position: absolute;
+           background: none;
+              border-radius: 10%;
+              animation: loader 2s infinite ease-in-out, loader1 2s  ease-in-out;
+            
+       } 
+       .load2{
+         height: 50px;
+           width: 50px;
+           border:5px solid rgb(0, 238, 255);
+           top: 46% ;
+           left: 52%;
+                
+           position: absolute;
+           background: none;
+              border-radius: 10%;
+              animation: loader 2s infinite ease-in-out,loader2 2s ease-in-out;
+       } 
+ 
+        .load3{
+         height: 50px;
+           width: 50px;
+           border:5px solid rgb(0, 238, 255);
+           top: 54% ;
+           left: 48%;
+           position: absolute;
+           background: none;
+              border-radius: 10%;
+              animation: loader 2s infinite ease-in-out,loader3 2s ease-in-out;
+       } 
+           .load4{
+         height: 50px;
+           width: 50px;
+           border:5px solid rgb(0, 238, 255);
+           top: 54% ;
+           left: 52%;
+        
+           position: absolute;
+           background: none;
+              border-radius: 10%;
+              animation: loader 2s infinite ease-in-out,loader4 2s ease-in-out;
+       } 
+
+
+     @keyframes loader{
+        0%{
+        
+              box-shadow: 0 0 20px cyan,
+              0 0 10px cyan,
+              0 0 80px cyan;
+         transform: rotateX(0) rotateY(0) rotateZ(0);
+        }
+        33%{
+           
+      box-shadow: 0px 0px 20px red,
+       0px 0px 10px red,
+       0px 0px 80px red;
+        
+            transform: rotateX(180deg) rotateY(0) rotateZ(0);
+            }
+         50%{
+              box-shadow: 0 0 20px#fbff00,
+              0 0 10px #fbff00,
+              0 0 80px #fbff00;
+              transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+         }
+
+        100%{
+              box-shadow: 0 0 20px rgb(255, 0, 225),
+              0 0 10px rgb(255, 0, 225),
+              0 0 80px rgb(255,0,255);
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+        }
+}
+  @keyframes loader1{
+    0%{
+       box-shadow: 0px 0px 20px red,
+       0px 0px 10px red,
+       0px 0px 80px red;
+        top:0%;
+        left: 0%;
+      }
+    100%{
+      box-shadow: 0px 0px 20px red,
+       0px 0px 10px red,
+       0px 0px 80px red,
+       inset 0px 0px 50px;
+          top: 46% ;
+          left: 48%;
+        }
+     }
+
+
+ @keyframes loader2{
+        0%{
+                box-shadow: 0px 0px 20px#fbff00,
+              0px 0px 10px #fbff00,
+              0px 0px 80px #fbff00;
+            top:0%;
+            left:100%;
+        }
+        100%{ 
+                box-shadow: 0 0 20px#fbff00,
+              0px 0px 10px #fbff00,
+              0px 0px 80px #fbff00;
+             top: 45% ;
+           left: 52%;
+        }
+     }
+
+ @keyframes loader3{
+        0%{
+           box-shadow: 0 0 20px cyan,
+              0 0 10px cyan,
+              0 0 80px cyan;
+            top:100%;
+            left:0%;
+        }
+        100%{ 
+           box-shadow: 0 0 20px cyan,
+              0 0 10px cyan,
+              0 0 80px cyan;
+            top: 54% ;
+           left: 48%;
+        }
+     }
+
+      @keyframes loader4{
+        0%{
+              box-shadow: 0 0 20px rgb(255, 0, 225),
+              0 0 10px rgb(255, 0, 225),
+              0 0 80px rgb(255,0,255);
+            top:100%;
+            left:100%;
+        }
+        100%{ 
+              box-shadow: 0 0 20px rgb(255, 0, 225),
+              0 0 10px rgb(255, 0, 225),
+              0 0 80px rgb(255,0,255);
+            top: 54% ;
+           left: 52%;
+        }
+     }
+    </style>
+</body>
+</html>
