@@ -1,2 +1,2 @@
-# Practical-1
+# Calculator-1
 Sitaram Gawas Works 
